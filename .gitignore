@@ -1,0 +1,45 @@
+notepad .gitignore
+```
+
+Copiez-collez ceci dedans :
+```
+# Environnement virtuel
+venv/
+env/
+ENV/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Data (ne pas versionner les gros fichiers de données)
+data/raw/*.csv
+data/raw/*.npy
+data/raw/*.gz
+data/processed/
+
+# Results
+results/
+experiments/results/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models (si trop gros)
+*.pth
+*.pt
+models/
