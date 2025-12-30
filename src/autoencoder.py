@@ -186,7 +186,7 @@ def test_autoencoder():
         mse = nn.MSELoss()(decoded, test_x).item()
         print(f"   MSE reconstruction: {mse:.4f}")
     
-    print("\n✅ Test réussi!")
+    print("\nTest réussi!")
     print("=" * 50)
     
     return model, trainer
@@ -195,3 +195,4 @@ def test_autoencoder():
 if __name__ == "__main__":
     # Lancer le test
     model, trainer = test_autoencoder()
+
